@@ -1,7 +1,8 @@
-Route::get('/productos', 'Web\Restaurant\HomeController@index');
-Route::get('/productos/nuevo', 'Web\Restaurant\HomeController@create');
-Route::post('/productos/nuevo', 'Web\Restaurant\HomeController@store');
-Route::get('/productos/{id}/ver', 'Web\Restaurant\HomeController@show');
-Route::get('/productos/{id}/eliminar', 'Web\Restaurant\HomeController@delete');
-Route::get('/productos/{id}/editar', 'Web\Restaurant\HomeController@update');
-Route::post('/productos/{id}/editar', 'Web\Restaurant\HomeCo
+Route::get('/productos', 'Web\Producto\HomeController@index');
+Route::get('/productos/nuevo', 'Web\Producto\HomeController@create');
+Route::post('/productos/nuevo', 'Web\Producto\HomeController@store');
+Route::get('/productos/{id}/PK', 'Web\Producto\HomeController@show');
+Route::get('/productos/{Cadena}/Nombre', 'Web\Producto\HomeController@delete');
+Route::get('/productos/{decimal}/Precio', 'Web\Producto\HomeController@update');
+Route::post('/productos/{entero}/Marcald', 'Web\Producto\HomeCo
+Route::post('/productos/{cadena}/Descripcion', 'Web\Producto\HomeCo
